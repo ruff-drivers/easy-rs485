@@ -1,6 +1,6 @@
 {
   "name": "easy-rs485",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rs485 interface wrapper.",
   "author": "Nanchao Inc.",
   "license": "MIT",

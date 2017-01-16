@@ -1,5 +1,6 @@
 {
     "models": [],
+    "power": null,
     "inputs": {
         "rs485": {
             "type": "rs485",
