@@ -6,7 +6,7 @@ A simple driver to wrap rs485 interface.
 
 ## Supported Engines
 
-* Ruff Lite: >=0.7.1 <0.7.2
+* Ruff Lite: >=0.7.2 <1.0.0
 
 ## Supported Models
 
