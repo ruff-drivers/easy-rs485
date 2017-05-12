@@ -58,6 +58,10 @@ Write data to the rs485 bus.
 
 Emitted when data is received from rs485 bus.
 
+#### `error`
+
+Emitted when error happens.
+
 ## Contributing
 
 Contributions to this project are warmly welcome. But before you open a pull request, please make sure your changes are passing code linting and tests.

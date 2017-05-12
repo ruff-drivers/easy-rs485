@@ -6,19 +6,20 @@
 'use strict';
 
 var driver = require('ruff-driver');
-var ReadStreaming = require('./read-streaming');
 
 module.exports = driver({
     attach: function (inputs, context) {
         var that = this;
         this._rs485 = inputs['rs485'];
-        this._readStream = new ReadStreaming(this._rs485);
 
-        this._readStream.on('data', function (data) {
+        this._rs485.on('data', function (data) {
             that.emit('data', data);
         });
 
-        this._readStream.start();
+        this._rs485.on('error', function (error) {
+            that.emit('error', error);
+        });
+
     },
     detach: function (callback) {
         this._rs485.close();
