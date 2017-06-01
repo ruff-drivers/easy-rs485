@@ -22,7 +22,6 @@ module.exports = driver({
 
     },
     detach: function (callback) {
-        this._rs485.close();
     },
     exports: {
         write: function (data, callback) {
